@@ -1,0 +1,120 @@
+/* Scroll target section styling */
+#artists {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+/* Page title styling */
+.artists-page .page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+/* Responsive container */
+.artists-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid layout for artist cards */
+.artist-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Artist card styling */
+.artist-card {
+  background: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
+}
+
+/* Artist image */
+.artist-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Artist info section */
+.artist-info {
+  padding: 1rem;
+}
+
+.artist-info h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.artist-info p {
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Popup overlay */
+.artist-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  cursor: pointer;
+}
+
+/* Popup content box */
+.popup-content {
+  background: white;
+  border-radius: 25px;
+  padding: 2rem;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Popup image */
+.popup-content img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+/* Popup title */
+.popup-content h2 {
+  color: #ff69b4;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Popup description */
+.popup-content p {
+  color: #444;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

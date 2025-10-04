@@ -1,0 +1,44 @@
+/* terms.css */
+
+.terms-page {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fdfdfd;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.terms-page h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.terms-page ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.terms-page li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 600px) {
+  .terms-page {
+    padding: 20px 10px;
+  }
+
+  .terms-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .terms-page li {
+    font-size: 1rem;
+  }
+}
