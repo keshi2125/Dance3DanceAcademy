@@ -1,6 +1,6 @@
 // src/TermsPage.js
 import React from 'react';
-import './terms.css'; // Optional: style this page separately
+import './Terms.css'; // Optional: style this page separately
 
 function TermsPage() {
   return (
