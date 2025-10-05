@@ -1,3 +1,4 @@
+/* Wrapper for the entire auth page */
 .auth-wrapper {
   position: relative;
   display: flex;
@@ -8,6 +9,7 @@
   background-color: #f5f5f5;
 }
 
+/* Title bar with toggle buttons */
 .auth-title-bar {
   position: absolute;
   top: 8%;
@@ -22,6 +24,7 @@
   box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
 }
 
+/* Toggle buttons */
 .toggle-button {
   padding: 8px 16px;
   border-radius: 20px;
@@ -32,16 +35,13 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.toggle-button:hover {
-  background-color: #ff69b4;
-  color: white;
-}
-
+.toggle-button:hover,
 .toggle-button.active {
   background-color: #ff69b4;
   color: white;
 }
 
+/* Auth box container */
 .auth-box {
   display: flex;
   width: 850px;
@@ -52,6 +52,7 @@
   background-color: #1a1a1a;
 }
 
+/* Left side with image and animation */
 .auth-left {
   flex: 1;
   position: relative;
@@ -88,6 +89,7 @@
   100% { background-position: 0% 50%; }
 }
 
+/* Right side with form */
 .auth-right {
   flex: 1;
   padding: 40px;
@@ -153,4 +155,124 @@
 .auth-switch a {
   color: #ff69b4;
   text-decoration: none;
+}
+
+/* 📱 Mobile Devices */
+@media (max-width: 600px) {
+  .auth-box {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  .auth-left,
+  .auth-right {
+    flex: none;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .auth-title-bar {
+    top: 5%;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .auth-image {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .auth-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+  }
+
+  .auth-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 📲 Tablet Devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .auth-box {
+    width: 95%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .auth-left,
+  .auth-right {
+    flex: 1 1 100%;
+    padding: 30px;
+  }
+
+  .auth-title-bar {
+    top: 6%;
+    font-size: 1rem;
+  }
+
+  .auth-image {
+    width: 70%;
+    max-height: 250px;
+  }
+
+  .auth-right h2 {
+    font-size: 1.8rem;
+  }
+
+  .form-group input {
+    font-size: 1rem;
+  }
+
+  .auth-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* 💻 Desktop Devices */
+@media (min-width: 1025px) {
+  .auth-box {
+    width: 850px;
+    height: 500px;
+    flex-direction: row;
+  }
+
+  .auth-left,
+  .auth-right {
+    flex: 1;
+    padding: 40px;
+  }
+
+  .auth-title-bar {
+    top: 8%;
+    font-size: 1rem;
+  }
+
+  .auth-image {
+    width: 80%;
+    max-height: 80%;
+  }
+
+  .auth-right h2 {
+    font-size: 2rem;
+  }
+
+  .form-group input {
+    font-size: 1rem;
+  }
+
+  .auth-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }

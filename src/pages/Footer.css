@@ -1,3 +1,4 @@
+/* Footer base styling */
 .footer {
   background-color: black;
   color: white;
@@ -12,6 +13,7 @@
   gap: 1.5rem;
 }
 
+/* Footer sections */
 .footer-section {
   flex: 1;
   min-width: 220px;
@@ -50,6 +52,7 @@
   color: pink;
 }
 
+/* Embedded map */
 .map-container {
   width: 100%;
   height: 120px;
@@ -58,13 +61,14 @@
   transition: height 0.3s ease;
 }
 
+/* Footer rights text */
 .footer-rights {
   margin-top: 20px;
   font-size: 0.8rem;
   color: #ccc;
 }
 
-/* Popup overlay */
+/* Terms popup overlay */
 .terms-popup {
   position: fixed;
   top: 0;
@@ -78,6 +82,7 @@
   z-index: 3000;
 }
 
+/* Terms popup content */
 .terms-content {
   background: white;
   color: black;
@@ -116,24 +121,109 @@
   background-color: #ff85c1;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* 📱 Mobile Devices */
+@media (max-width: 600px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
+    text-align: left;
   }
 
   .footer-section {
-    text-align: center;
+    width: 100%;
+    min-width: unset;
     font-size: 0.85rem;
-    margin-bottom: 1rem;
   }
 
   .footer-section h3 {
     font-size: 0.95rem;
   }
 
+  .footer-section a,
+  .terms-button {
+    font-size: 0.85rem;
+  }
+
   .map-container {
     height: 100px;
+  }
+
+  .footer-rights {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .terms-content {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .terms-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .terms-content button {
+    font-size: 0.9rem;
+  }
+}
+
+/* 📲 Tablet Devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-section {
+    flex: 1 1 45%;
+    font-size: 0.9rem;
+  }
+
+  .map-container {
+    height: 110px;
+  }
+
+  .terms-content {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .terms-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .terms-content button {
+    font-size: 1rem;
+  }
+}
+
+/* 💻 Desktop Devices */
+@media (min-width: 1025px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+
+  .map-container {
+    height: 120px;
+  }
+
+  .terms-content {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .terms-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .terms-content button {
+    font-size: 1rem;
   }
 }

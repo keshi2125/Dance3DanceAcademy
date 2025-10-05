@@ -41,7 +41,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for cards */
 .classes-page .class-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(255, 105, 180, 0.3);
@@ -70,4 +69,73 @@
 .classes-page .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* 📱 Mobile Devices */
+@media (max-width: 600px) {
+  #classes {
+    padding: 50px 15px;
+  }
+
+  .classes-page .page-title {
+    font-size: 1.6rem;
+  }
+
+  .classes-page .class-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .classes-page .class-card h3 {
+    font-size: 1rem;
+  }
+
+  .classes-page .class-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 📲 Tablet Devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+  #classes {
+    padding: 60px 25px;
+  }
+
+  .classes-page .page-title {
+    font-size: 1.8rem;
+  }
+
+  .classes-page .class-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .classes-page .class-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .classes-page .class-card p {
+    font-size: 1rem;
+  }
+}
+
+/* 💻 Desktop Devices */
+@media (min-width: 1025px) {
+  #classes {
+    padding: 80px 40px;
+  }
+
+  .classes-page .page-title {
+    font-size: 2.2rem;
+  }
+
+  .classes-page .class-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .classes-page .class-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .classes-page .class-card p {
+    font-size: 1.1rem;
+  }
 }

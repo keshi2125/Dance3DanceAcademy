@@ -1,3 +1,4 @@
+/* Base styles — Mobile First */
 .home-section {
   width: 100%;
   overflow-x: hidden;
@@ -15,7 +16,6 @@
   overflow: hidden;
 }
 
-/* Banner Image */
 .banner-image {
   width: 100%;
   height: 60vh;
@@ -27,7 +27,6 @@
   transition: transform 1s ease-in-out;
 }
 
-/* Overlay Gradient */
 .banner-overlay {
   position: absolute;
   top: 0;
@@ -38,7 +37,6 @@
   z-index: -1;
 }
 
-/* Banner Text */
 .banner-text {
   z-index: 1;
   max-width: 700px;
@@ -46,15 +44,14 @@
 }
 
 .banner-text h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .banner-text p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-/* Navigation Buttons */
 .banner-button {
   position: absolute;
   top: 50%;
@@ -104,14 +101,14 @@
   color: #333;
 }
 
-/* Responsive Adjustments */
+/* 📱 Small Devices (Phones) */
 @media (max-width: 768px) {
   .banner-text h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .banner-text p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .banner-button {
@@ -121,5 +118,67 @@
 
   .about-section {
     padding: 40px 15px;
+  }
+}
+
+/* 📲 Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .banner-image {
+    height: 50vh;
+  }
+
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-text p {
+    font-size: 1.1rem;
+  }
+
+  .about-section {
+    padding: 50px 30px;
+  }
+
+  .about-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* 💻 Large Devices (Desktops) */
+@media (min-width: 1025px) {
+  .banner {
+    height: 70vh;
+  }
+
+  .banner-image {
+    height: 70vh;
+  }
+
+  .banner-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .banner-text p {
+    font-size: 1.3rem;
+  }
+
+  .about-section {
+    padding: 80px 40px;
+  }
+
+  .about-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-content p {
+    font-size: 1.2rem;
   }
 }
