@@ -5,9 +5,9 @@ function ContactPage() {
   return (
     <div className="contact-page">
       <h2>Contact Us</h2>
-      <p><strong>Academy Name:</strong> Rhythm Dance Academy</p>
+      <p><strong>Academy Name:</strong> Dance3Dance Academy</p>
       <p><strong>Address:</strong> 123 Main Street, Dindigul, Tamil Nadu, India</p>
-      <p><strong>Email:</strong> info@rhythmdanceacademy.in</p>
+      <p><strong>Email:</strong> info@dance3danceacademy.in</p>
       <p><strong>Phone:</strong> +91 98765 43210</p>
 
       <h3>Our Location</h3>
