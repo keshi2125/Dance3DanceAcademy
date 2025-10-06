@@ -26,7 +26,7 @@ const Navbar = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/artists">The Artists</Link></li>
           <li><Link to="/classes">Classes</Link></li>
-          <li><Link to="/login">Booking a Slot</Link></li>
+          <li><Link to="/login" className="booking-link">Booking a Slot</Link></li>
         </ul>
 
         {/* Mobile Hamburger */}
@@ -42,7 +42,7 @@ const Navbar = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/artists">The Artists</Link></li>
         <li><Link to="/classes">Classes</Link></li>
-        <li><Link to="/login">Booking a Slot</Link></li>
+        <li><Link to="/login" className="booking-link">Booking a Slot</Link></li>
       </ul>
     </nav>
   );
